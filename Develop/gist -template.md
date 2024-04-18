@@ -1,5 +1,7 @@
 # Regular Expression Sytanx(Regex)
 
+A **regex**, which is short for **regular expression**, is a sequence of characters that defines a specific search pattern. When included in code or search algorithms, regular expressions can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also frequently used to validate input.
+
 Regular expressions (regex) are powerful tool used in programming to search, match and maniplate text within patterns. They are used in various languages for validating, parsing and transforming text. Each component of a regex serves a specific purpose, enabling complex and flexible pattern matching.
 
 ## Summary
@@ -8,9 +10,9 @@ This is a walk through of fundamental components of regular expressions, often u
 
 Here is an example of a regex
 
-/^(\w+):\/\/([\w-]+(\.[\w-]+)+)(\/[\w- .\/?%&=]\*)?$/i
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-This reular expression is used to validate and parse URLs, breaking them down into protocol, domain, and optional path components.
+Each component of this regex has a unique responsibility to make sure that a user enters an email address that begins with an unspecified number of characters preceding the `@` symbol, followed by a domain.
 
 ## Table of Contents
 
@@ -94,3 +96,4 @@ Character escapes allow you to match characters that are reserved as meta-charac
 ## Author
 
 This guide is written by Meera Karnavar with the intention of helping developers and users to use regular expression in their projects
+https://gist.github.com/MeerKar/90c5ff48e966b232a8196cf6b68ff3c5
