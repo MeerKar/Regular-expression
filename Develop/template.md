@@ -4,7 +4,7 @@ Regular expressions (regex) are powerful tool used in programming to search, mat
 
 ## Summary
 
-This guide will walk you through the fundamental components of regular expressions, often used for data validation, string manipulation, and complex text parsing. And will cover the syntax and function of anchors, quantifiers, grouping constructs, and more, with examples to demonstrate each concept.
+This is a walk through of fundamental components of regular expressions, often used for data validation, string manipulation, and complex text parsing. And will cover the syntax and function of anchors, quantifiers, grouping constructs, and more, with examples to demonstrate each concept.
 
 Here is an example of a regex
 
@@ -27,20 +27,70 @@ This reular expression is used to validate and parse URLs, breaking them down in
 
 ### Anchors
 
+Anchors are used to match the position within the string.
+The two anchors are `^` and `$`
+
+. `^` represents the start of the string.
+. `$` represents the end of the string.
+
 ### Quantifiers
+
+Quantifiers specifies how many times a character, group or a character class must occur.
+
+. `*`(0 or more)
+. `+` (1 or more)
+. `?` (0 or 1)
+. `{n}`,`{n,}`,`{n,m}` (exactly n, at least n, between n and m)
 
 ### Grouping Constructs
 
+Grouping Constructs are used to:
+
+. Create subpatterns(`(abc)`)
+
+. Apply quantifiers to parts of the pattern
+
+. Create capture groups for extracting data from strings
+
 ### Bracket Expressions
+
+Bracket expressions `[ ]` match any one character from a set of characters inside the brackets
+
+.`[a-z]`matches any lowercase letter.
+`[^a-z]` matches any character that is not a lowercase letter.
 
 ### Character Classes
 
+Character classes provide a shortcut for common sets of characters
+
+.`\d` matches any digit.
+
+.`\w` matches any word of character
+(alphanumeric and underscore).
+
+.`\s`matches any white space character
+
 ### The OR Operator
+
+The OR operator `|` allows for matching one of several subpatterns:
+
+. `boy|girl` matches "boy" or "girl"
 
 ### Flags
 
+Flags changes the behaviour of the regular expression
+
+. `g` (global match)
+. `i` (case insensentive)
+. `m` (mutiline)
+
 ### Character Escapes
+
+Character escapes allow you to match characters that are reserved as meta-characters in regex syntax:
+
+. `\.` matches a literal dot.
+. `\\` matches a literal backslash.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This guide is written by Meera Karnavar with the intention of helping developers and users to use regular expression in their projects
